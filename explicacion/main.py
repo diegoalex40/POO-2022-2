@@ -66,11 +66,11 @@ print(p3)
 class persona4:
     nombre   = str
     semestre = str
-    
+
     def __init__(self, nombre, semestre):
         self.nombre   = nombre
         self.semestre = semestre
-    
+
     def saludo(self):
         print("Bienvenido " + self.nombre + " al " + self.semestre + " semestre")
 
