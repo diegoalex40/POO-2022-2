@@ -6,7 +6,16 @@ from payment import Payment
 
 class Trip(Car, Driver, User, Route, Payment):
     idTrip = int
-
-    def __init__(self, idTrip,  Car, User, Driver, Route, Payment):
-        super().__init__(Car, User, Driver, Route, Payment)
-        self.idTrip = idTrip
+    car     = Car("", "", "", "", "")
+    driver  = Driver("", "", "", "", "", "")
+    user    = User("", "", "", "", "")
+    route   = Route("", "", "", "")
+    payment = Payment("", "", "")
+    
+    def __init__(self, idTrip, user, driver, car, route, payment ):
+       self.idTrip  = idTrip
+       self.car     = car
+       self.driver  = driver
+       self.user    = user
+       self.route   = route
+       self.payment = payment
